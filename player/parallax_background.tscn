@@ -1,0 +1,81 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg1asnwo3cxko"]
+
+[ext_resource type="Texture2D" uid="uid://b2moxlxvr7qyp" path="res://resource/sky.jpg" id="1_kwqri"]
+[ext_resource type="Script" path="res://player/BG.gd" id="1_lonpn"]
+[ext_resource type="Texture2D" uid="uid://q204js44d5h0" path="res://resource/buildings.png" id="3_78m5r"]
+
+[node name="Bg" type="ParallaxBackground"]
+script = ExtResource("1_lonpn")
+metadata/_edit_horizontal_guides_ = [-60.0, -60.0]
+
+[node name="sky_bg" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1188, 0)
+
+[node name="bg_sky" type="Sprite2D" parent="sky_bg"]
+position = Vector2(595, 293.5)
+scale = Vector2(0.61875, 0.79661)
+texture = ExtResource("1_kwqri")
+
+[node name="building_bg" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.67, 1)
+motion_mirroring = Vector2(1672, 0)
+
+[node name="Buildings" type="Sprite2D" parent="building_bg"]
+position = Vector2(70, 582.25)
+scale = Vector2(4.375, 4.07813)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings3" type="Sprite2D" parent="building_bg"]
+position = Vector2(346, 600)
+scale = Vector2(4.375, 3.28125)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings4" type="Sprite2D" parent="building_bg"]
+position = Vector2(210, 600)
+scale = Vector2(4.375, 3.28125)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings2" type="Sprite2D" parent="building_bg"]
+position = Vector2(487.5, 560.5)
+scale = Vector2(4.90625, 5.71875)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings5" type="Sprite2D" parent="building_bg"]
+position = Vector2(768.5, 600.5)
+scale = Vector2(4.84375, 3.53125)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings6" type="Sprite2D" parent="building_bg"]
+position = Vector2(631.5, 599)
+scale = Vector2(4.78125, 3.625)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings7" type="Sprite2D" parent="building_bg"]
+position = Vector2(903, 614)
+scale = Vector2(4.375, 2.875)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings8" type="Sprite2D" parent="building_bg"]
+position = Vector2(1179, 612.5)
+scale = Vector2(4.375, 3.28125)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings9" type="Sprite2D" parent="building_bg"]
+position = Vector2(1043, 590.5)
+scale = Vector2(4.375, 4.65625)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings10" type="Sprite2D" parent="building_bg"]
+position = Vector2(1322, 567.75)
+scale = Vector2(4.625, 6.04688)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings11" type="Sprite2D" parent="building_bg"]
+position = Vector2(1603, 604)
+scale = Vector2(4.375, 3.28125)
+texture = ExtResource("3_78m5r")
+
+[node name="Buildings12" type="Sprite2D" parent="building_bg"]
+position = Vector2(1466, 602)
+scale = Vector2(4.375, 3.28125)
+texture = ExtResource("3_78m5r")
