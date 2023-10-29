@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx1ub3vtfd8nb"]
+
+[ext_resource type="Script" path="res://player/BG.gd" id="1_k16rf"]
+[ext_resource type="Script" path="res://start.gd" id="1_mh8xq"]
+[ext_resource type="Texture2D" uid="uid://b2moxlxvr7qyp" path="res://resource/sky.jpg" id="2_2lg2j"]
+
+[node name="main" type="Node2D"]
+
+[node name="Bg" type="ParallaxBackground" parent="."]
+script = ExtResource("1_k16rf")
+metadata/_edit_horizontal_guides_ = [-60.0, -60.0]
+
+[node name="sky_bg" type="ParallaxLayer" parent="Bg"]
+motion_mirroring = Vector2(1188, 0)
+
+[node name="bg_sky" type="Sprite2D" parent="Bg/sky_bg"]
+position = Vector2(595, 293.5)
+scale = Vector2(0.61875, 0.79661)
+texture = ExtResource("2_2lg2j")
+
+[node name="start" type="Button" parent="."]
+offset_left = 503.0
+offset_top = 234.0
+offset_right = 727.0
+offset_bottom = 304.0
+text = "START"
+script = ExtResource("1_mh8xq")
+
+[node name="quit" type="Button" parent="."]
+offset_left = 499.0
+offset_top = 350.0
+offset_right = 722.0
+offset_bottom = 425.0
+text = "EXIT"
+
+[connection signal="pressed" from="start" to="start" method="_on_pressed"]
+[connection signal="pressed" from="quit" to="start" method="_on_quit_pressed"]
